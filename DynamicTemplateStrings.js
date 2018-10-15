@@ -6,8 +6,8 @@ const fillTemplate = function(templateString, templateVars){
 }
 
 // Sample
-var getVal = function() { 
-  var hosting = "overview/id/d:${Id}";
-  var domain = {Id:1234, a:22};
-  return fillTemplate(hosting, domain);
-}
+var hosting = "overview/id/d:${Id}";
+var domain = {Id:1234, User:22};
+var result = fillTemplate(hosting, domain);
+
+console.log(result);
